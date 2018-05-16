@@ -45,3 +45,13 @@ Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bd
 
 
 Started GET "/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1" for 68.40.63.148 at 2018-05-16 13:26:29 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "First Post"], ["description", "This is my first post and I am testing the description."], ["created_at", "2018-05-16 13:29:29.275115"], ["updated_at", "2018-05-16 13:29:29.275115"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Second Post, Man!"], ["description", "Doing a second post and checking the website."], ["created_at", "2018-05-16 13:29:29.279420"], ["updated_at", "2018-05-16 13:29:29.279420"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Last post for now"], ["description", "This here is the last post and I hope everything goes well."], ["created_at", "2018-05-16 13:29:29.282327"], ["updated_at", "2018-05-16 13:29:29.282327"]]
+  [1m[35m (2.2ms)[0m  commit transaction
